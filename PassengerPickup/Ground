@@ -1,0 +1,93 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * A background with a path drawn on it. Two different backgrounds are available.
+ * 
+ * @author mik
+ * @version 1.0
+ */
+public class Ground  extends World
+{
+
+    /**
+     * Create the field.
+     */
+    public Ground()
+    {    
+        super(800, 540, 1);
+        addObject( new Car(), 180, 450);
+
+        prepare();
+    }
+
+    public void showMap1()
+    {
+        setBackground("ground.png");
+    }
+
+    public void showMap2()
+    {
+        setBackground("ground2.png");
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Pedestrian pedestrian = new Pedestrian();
+        addObject(pedestrian,411,209);
+        Pedestrian pedestrian2 = new Pedestrian();
+        addObject(pedestrian2,190,252);
+        Pedestrian pedestrian3 = new Pedestrian();
+        addObject(pedestrian3,195,83);
+        Pedestrian pedestrian4 = new Pedestrian();
+        addObject(pedestrian4,207,72);
+        Pedestrian pedestrian5 = new Pedestrian();
+        addObject(pedestrian5,561,140);
+        Pedestrian pedestrian6 = new Pedestrian();
+        addObject(pedestrian6,650,250);
+        Pedestrian pedestrian7 = new Pedestrian();
+        addObject(pedestrian7,623,441);
+        Pedestrian pedestrian8 = new Pedestrian();
+        addObject(pedestrian8,411,450);
+        Pedestrian pedestrian9 = new Pedestrian();
+        addObject(pedestrian9,282,375);
+        Pedestrian pedestrian10 = new Pedestrian();
+        addObject(pedestrian10,268,219);
+        Pedestrian pedestrian11 = new Pedestrian();
+        addObject(pedestrian11,279,95);
+        Pedestrian pedestrian12 = new Pedestrian();
+        addObject(pedestrian12,356,94);
+        pedestrian2.setLocation(120,225);
+        pedestrian10.setLocation(139,163);
+        pedestrian4.setLocation(460,94);
+        pedestrian.setLocation(652,343);
+        pedestrian8.setLocation(470,423);
+        Pedestrian pedestrian13 = new Pedestrian();
+        addObject(pedestrian13,179,345);
+        Customer customer = new Customer();
+        addObject(customer,335,197);
+        Customer customer2 = new Customer();
+        addObject(customer2,243,246);
+        Customer customer3 = new Customer();
+        addObject(customer3,411,319);
+        Customer customer4 = new Customer();
+        addObject(customer4,550,335);
+        Customer customer5 = new Customer();
+        addObject(customer5,501,223);
+        Customer customer6 = new Customer();
+        addObject(customer6,355,273);
+        House house = new House();
+        addObject(house,424,251);
+        House house2 = new House();
+        addObject(house2,718,80);
+        House house3 = new House();
+        addObject(house3,721,468);
+        House house4 = new House();
+        addObject(house4,86,91);
+        House house5 = new House();
+        addObject(house5,86,491);
+    }
+}
