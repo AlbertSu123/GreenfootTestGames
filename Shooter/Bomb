@@ -22,6 +22,8 @@ public class Bomb extends Actor
      */
     public void act() 
     {
+       setRotation(b);
+       move(10);
        removeTouching(Man.class);
     }
     
